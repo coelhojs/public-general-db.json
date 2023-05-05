@@ -1,0 +1,56 @@
+{
+    "user": [
+        {
+            "id": 1,
+            "company_id": 1,
+            "login": "test-user",
+            "password": "12345678"
+        }
+    ],
+    "company": [
+        {
+            "id": 1,
+            "name": "Lanchonete Big Burguer",
+            "email": "big_burguer@big_burguer.com.br",
+            "phone": "(31)99999-9999",
+            "address": "Avenida Tapajós, 1000, Bairro São Caetano",
+            "city": "Betim",
+            "state": "MG",
+            "zip": "32600-000"
+        }
+    ],
+    "customer": [
+        {
+            "id": 1,
+            "companies": [
+                1
+            ],
+            "name": "Ana Maria",
+            "phone": "(31)99999-9999",
+            "address": "Rua Campo Belo, 1000, Bairro São Caetano",
+            "city": "Betim",
+            "state": "MG",
+            "zip": "32650-000"
+        }
+    ],
+    "item": [
+        {
+            "id": "1",
+            "name": "X-Burguer",
+            "price": "9.50",
+            "pictures": [
+                {
+                    "url": "/img/x-burguer.png",
+                    "alt": "X-Burguer"
+                }
+            ]
+        }
+    ],
+    "stock": [
+        {
+            "id": "1",
+            "item_id": "1",
+            "available": true
+        }
+    ]
+}
