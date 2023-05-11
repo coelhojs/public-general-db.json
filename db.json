@@ -5,6 +5,18 @@
             "company_id": 1,
             "login": "test-user",
             "password": "12345678"
+        },
+        {
+            "id": 2,
+            "company_id": 2,
+            "login": "test-user2",
+            "password": "23456789"
+        },
+        {
+            "id": 3,
+            "company_id": 3,
+            "login": "test-user3",
+            "password": "34567890"
         }
     ],
     "company": [
@@ -17,6 +29,26 @@
             "city": "Betim",
             "state": "MG",
             "zip": "32600-000"
+        },
+        {
+            "id": 2,
+            "name": "Lanches Uau Burguer",
+            "email": "uau_burguer@uau_burguer.com.br",
+            "phone": "(31)97788-7788",
+            "address": "Avenida Nova York, 3460, Bairro Capelinha",
+            "city": "Betim",
+            "state": "MG",
+            "zip": "32620-050"
+        },
+        {
+            "id": 3,
+            "name": "Pizzaria Marguerita",
+            "email": "pizzaria_marguerita@marguerita.com.br",
+            "phone": "(31)99877-9877",
+            "address": "Avenida Gil Diniz, 300, Bairro Fonte Grande",
+            "city": "Contagem",
+            "state": "MG",
+            "zip": "32020-000"
         }
     ],
     "customer": [
@@ -31,6 +63,30 @@
             "city": "Betim",
             "state": "MG",
             "zip": "32650-000"
+        },
+        {
+            "id": 2,
+            "companies": [
+                2
+            ],
+            "name": "José Carlos",
+            "phone": "(31)98299-9159",
+            "address": "Rua Ailton Campos, 293, Bairro Santa Helena",
+            "city": "Contagem",
+            "state": "MG",
+            "zip": "32010-010"
+        },
+        {
+            "id": 3,
+            "companies": [
+                3
+            ],
+            "name": "Jaqueline Reis",
+            "phone": "(31)97319-5251",
+            "address": "Rua Monte Colina, 124, Bairro Imbiruçu",
+            "city": "Betim",
+            "state": "MG",
+            "zip": "32652-130"
         }
     ],
     "item": [
@@ -44,12 +100,92 @@
                     "alt": "X-Burguer"
                 }
             ]
+        },
+        {
+            "id": "2",
+            "name": "X-Egg Burguer",
+            "price": "11.50",
+            "pictures": [
+                {
+                    "url": "/img/x-egg-burguer.png",
+                    "alt": "X-Egg Burguer"
+                }
+            ]
+        },
+        {
+            "id": "3",
+            "name": "Pizza Marguerita",
+            "price": "40.00",
+            "pictures": [
+                {
+                    "url": "/img/pizza-marguerita.png",
+                    "alt": "Pizza Marguerita"
+                }
+            ]
+        },
+        {
+            "id": "4",
+            "name": "Pizza Calabresa",
+            "price": "42.00",
+            "pictures": [
+                {
+                    "url": "/img/pizza-calabresa.png",
+                    "alt": "Pizza Calabresa"
+                }
+            ]
+        },
+        {
+            "id": "5",
+            "name": "X-Frango",
+            "price": "13.00",
+            "pictures": [
+                {
+                    "url": "/img/x-frango.png",
+                    "alt": "X-Frango"
+                }
+            ]
+        },
+        {
+            "id": "6",
+            "name": "X-Salada",
+            "price": "10.00",
+            "pictures": [
+                {
+                    "url": "/img/x-salada.png",
+                    "alt": "X-Salada"
+                }
+            ]
         }
     ],
     "stock": [
         {
             "id": "1",
             "item_id": "1",
+            "available": true
+        },
+        {
+            "id": "2",
+            "item_id": "2",
+            "available": true
+        },
+        {
+            "id": "3",
+            "item_id": "3",
+            "available": true
+        },
+        {
+            "id": "4",
+            "item_id": "4",
+            "available": false
+        },
+        {
+            "id": "5",
+            "item_id": "5",
+            "available": false
+        },
+        {
+            "id": "6",
+            "item_id": "6",
             "available": true
         }
     ]
